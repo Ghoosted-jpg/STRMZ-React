@@ -1,6 +1,6 @@
 # 🌟 STRMZ - Modern React Portfolio
 
-![STRMZ Website Preview](https://ghoosted-jpg.github.io/STRMZ-React/static/media/hero-image.a1b0e1a0.png)
+![STRMZ Website Preview](https://ghoosted-jpg.github.io/STRMZ-React/#/)
 
 A sleek, animated portfolio website built with cutting-edge web technologies. Features smooth animations, responsive design, and interactive elements.
 
