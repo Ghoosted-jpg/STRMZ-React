@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Ghoosted-jpg/STRMZ-React/static/css/main.7610b392.css",
+    "main.js": "/Ghoosted-jpg/STRMZ-React/static/js/main.d36c282f.js",
+    "static/js/453.b72bf81c.chunk.js": "/Ghoosted-jpg/STRMZ-React/static/js/453.b72bf81c.chunk.js",
+    "static/media/AboutUsHeaderImg.png": "/Ghoosted-jpg/STRMZ-React/static/media/AboutUsHeaderImg.9f924fca9ec82baf1978.png",
+    "static/media/ServiceDetailIMG.png": "/Ghoosted-jpg/STRMZ-React/static/media/ServiceDetailIMG.5bc8224677e0b32fadb6.png",
+    "static/media/ServiceImage.png": "/Ghoosted-jpg/STRMZ-React/static/media/ServiceImage.dfcd07c70de8c8e95f5a.png",
+    "static/media/Service-Section3Img.png": "/Ghoosted-jpg/STRMZ-React/static/media/Service-Section3Img.e5bb471a6aa195b4a500.png",
+    "static/media/picfolder.png": "/Ghoosted-jpg/STRMZ-React/static/media/picfolder.3b34c3fbdeb399426581.png",
+    "static/media/ContactUsImage.png": "/Ghoosted-jpg/STRMZ-React/static/media/ContactUsImage.483e236df465049e6f71.png",
+    "static/media/Work1.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work1.c28f99b398e741ea5655.png",
+    "static/media/Work6.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work6.60eabd4c20184dc1ad8e.png",
+    "static/media/AboutUsRIghtCircle.png": "/Ghoosted-jpg/STRMZ-React/static/media/AboutUsRIghtCircle.ba4ecada99f339bb04ef.png",
+    "static/media/AboutUsLeftCircle.png": "/Ghoosted-jpg/STRMZ-React/static/media/AboutUsLeftCircle.8e2d8391819b2b26c080.png",
+    "static/media/Work7.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work7.7e708da06d6148f00753.png",
+    "static/media/Work3.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work3.7dcf7c649d9a20351b6a.png",
+    "static/media/Rectangle 59.png": "/Ghoosted-jpg/STRMZ-React/static/media/Rectangle 59.7c07c392835744aba4cb.png",
+    "static/media/Work2.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work2.e6cffda9e5d6e648b734.png",
+    "static/media/Work5.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work5.2bda595746d108567344.png",
+    "static/media/Work4.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work4.13e2d44d516c55d2c48e.png",
+    "static/media/Rectangle 57.png": "/Ghoosted-jpg/STRMZ-React/static/media/Rectangle 57.4a5168d1127c8b3b888f.png",
+    "static/media/Work8'.png": "/Ghoosted-jpg/STRMZ-React/static/media/Work8'.041dac54c9516abee003.png",
+    "static/media/AboutUsGradientFolder.png": "/Ghoosted-jpg/STRMZ-React/static/media/AboutUsGradientFolder.602bff2747f8212b8827.png",
+    "static/media/GradientFolder.png": "/Ghoosted-jpg/STRMZ-React/static/media/GradientFolder.1d9b857b8bedbe9a1185.png",
+    "static/media/Rectangle 58.png": "/Ghoosted-jpg/STRMZ-React/static/media/Rectangle 58.5b8cd535df22cb5abe27.png",
+    "static/media/Mask group.png": "/Ghoosted-jpg/STRMZ-React/static/media/Mask group.37994ed3811112d3def0.png",
+    "index.html": "/Ghoosted-jpg/STRMZ-React/index.html",
+    "main.7610b392.css.map": "/Ghoosted-jpg/STRMZ-React/static/css/main.7610b392.css.map",
+    "main.d36c282f.js.map": "/Ghoosted-jpg/STRMZ-React/static/js/main.d36c282f.js.map",
+    "453.b72bf81c.chunk.js.map": "/Ghoosted-jpg/STRMZ-React/static/js/453.b72bf81c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7610b392.css",
+    "static/js/main.d36c282f.js"
+  ]
+}
