@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('./Fonts/Aileron-Bold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('./Fonts/Aileron-Regular.woff2') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('./Fonts/Aileron-SemiBold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}

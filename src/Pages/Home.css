@@ -1,0 +1,7 @@
+.split-word {
+  will-change: transform, opacity;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
