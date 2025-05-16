@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ghoosted-jpg/STRMZ-React/static/css/main.7610b392.css",
-    "main.js": "/Ghoosted-jpg/STRMZ-React/static/js/main.426f8d5f.js",
+    "main.js": "/Ghoosted-jpg/STRMZ-React/static/js/main.d36c282f.js",
     "static/js/453.b72bf81c.chunk.js": "/Ghoosted-jpg/STRMZ-React/static/js/453.b72bf81c.chunk.js",
     "static/media/AboutUsHeaderImg.png": "/Ghoosted-jpg/STRMZ-React/static/media/AboutUsHeaderImg.9f924fca9ec82baf1978.png",
     "static/media/ServiceDetailIMG.png": "/Ghoosted-jpg/STRMZ-React/static/media/ServiceDetailIMG.5bc8224677e0b32fadb6.png",
@@ -27,11 +27,11 @@
     "static/media/Mask group.png": "/Ghoosted-jpg/STRMZ-React/static/media/Mask group.37994ed3811112d3def0.png",
     "index.html": "/Ghoosted-jpg/STRMZ-React/index.html",
     "main.7610b392.css.map": "/Ghoosted-jpg/STRMZ-React/static/css/main.7610b392.css.map",
-    "main.426f8d5f.js.map": "/Ghoosted-jpg/STRMZ-React/static/js/main.426f8d5f.js.map",
+    "main.d36c282f.js.map": "/Ghoosted-jpg/STRMZ-React/static/js/main.d36c282f.js.map",
     "453.b72bf81c.chunk.js.map": "/Ghoosted-jpg/STRMZ-React/static/js/453.b72bf81c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7610b392.css",
-    "static/js/main.426f8d5f.js"
+    "static/js/main.d36c282f.js"
   ]
 }
