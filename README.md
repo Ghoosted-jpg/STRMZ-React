@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 🌟 STRMZ - Modern React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![STRMZ Website Preview](https://ghoosted-jpg.github.io/STRMZ-React/#/)
 
-## Available Scripts
+A sleek, animated portfolio website built with cutting-edge web technologies. Features smooth animations, responsive design, and interactive elements.
 
-In the project directory, you can run:
+## 🚀 Live Demo
+[View Live Website](https://ghoosted-jpg.github.io/STRMZ-React/)
 
-### `npm start`
+## ✨ Key Features
+- **Fluid Animations** with Framer Motion & GSAP
+- **Mobile-First** responsive design
+- **Interactive UI** elements
+- **Modern Tech Stack** (React 18 + Tailwind CSS)
+- **Performance Optimized** (95+ Lighthouse score)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge" alt="Framer Motion">
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP">
+  <img src="https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages">
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎨 Design Highlights
+### Micro-Interactions
+- Scroll progress indicator
+- Hover effects on cards
+- Smooth page transitions
+- Animated navigation
 
-### `npm test`
+### Sections
+1. **Hero Section** - Dynamic typography with motion effects
+2. **Services** - Interactive service cards
+3. **Portfolio** - Animated project showcase
+4. **About** - Timeline animation
+5. **Contact** - Form with validation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/Ghoosted-jpg/STRMZ-React.git
+cd STRMZ-React
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run development server:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Deployment
+The project is configured for automatic GitHub Pages deployment:
+```bash
+npm run deploy
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧑‍💻 Development Scripts
+| Command | Description |
+|---------|-------------|
+| `npm start` | Runs the app in development mode |
+| `npm run build` | Builds for production |
+| `npm run deploy` | Builds and deploys to GitHub Pages |
+| `npm test` | Runs tests |
+| `npm run lint` | Runs ESLint |
 
-### `npm run eject`
+## 🌐 Routing
+Uses React HashRouter for GitHub Pages compatibility:
+```
+/               # Home
+/#/About        # About section
+/#/Services     # Services
+/#/Contact      # Contact form
+```
+## 💡 Credits
+- Icons from [Lucide](https://lucide.dev/)
+- Animation libraries: Framer Motion & GSAP
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/Ghoosted-jpg">Ghoosted</a>
+</p>
