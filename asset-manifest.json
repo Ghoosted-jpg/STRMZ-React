@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/STRMZ-React/static/css/main.5e71be6c.css",
-    "main.js": "/STRMZ-React/static/js/main.d258f105.js",
+    "main.js": "/STRMZ-React/static/js/main.ee562761.js",
     "static/js/453.b72bf81c.chunk.js": "/STRMZ-React/static/js/453.b72bf81c.chunk.js",
     "static/media/AboutUsHeaderImg.png": "/STRMZ-React/static/media/AboutUsHeaderImg.9f924fca9ec82baf1978.png",
     "static/media/ServiceDetailIMG.png": "/STRMZ-React/static/media/ServiceDetailIMG.5bc8224677e0b32fadb6.png",
@@ -27,11 +27,11 @@
     "static/media/Mask group.png": "/STRMZ-React/static/media/Mask group.37994ed3811112d3def0.png",
     "index.html": "/STRMZ-React/index.html",
     "main.5e71be6c.css.map": "/STRMZ-React/static/css/main.5e71be6c.css.map",
-    "main.d258f105.js.map": "/STRMZ-React/static/js/main.d258f105.js.map",
+    "main.ee562761.js.map": "/STRMZ-React/static/js/main.ee562761.js.map",
     "453.b72bf81c.chunk.js.map": "/STRMZ-React/static/js/453.b72bf81c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e71be6c.css",
-    "static/js/main.d258f105.js"
+    "static/js/main.ee562761.js"
   ]
 }
