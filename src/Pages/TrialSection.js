@@ -47,15 +47,31 @@ const TrialSection = () => {
                         className='absolute -z-0 top-1 xl:top-2 right-[71px] sm:right-[123px] md:right-[119px] xl:right-32 w-[65px] sm:w-[97px] md:w-[110px] xl:w-[124px]' />
                 </div>
                 <div className='flex justify-between items-center flex-col xs:flex-row xs:w-[361px] mt-5'>
-                    <div className="flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer">
-                        <div className="inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
+                    <div className="relative flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-black cursor-pointer overflow-hidden">
+                        {/* Expanding background animation */}
+                        <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-[#CBE26B] rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+                        {/* Content */}
+                        <div className="relative z-10 inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
                             <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
                         </div>
-                        <Link to="/login" className="pl-0 font-aileron font-semibold group-hover:text-black transition duration-500">
+                        <Link
+                            to="#"
+                            className="relative z-10 pl-0 font-aileron text-lg group-hover:text-black transition duration-500"
+                        >
                             Schedule A Call
                         </Link>
                     </div>
-                    <button className='font-aileron font-semibold bg-[#CBE26B] w-[141px] h-[54px] rounded-full hover:bg-black hover:text-white mt-5 xs:mt-0'>Get Started</button>
+                    <button className="relative overflow-hidden font-aileron font-semibold bg-[#CBE26B] w-[141px] h-[54px] rounded-full mt-5 xs:mt-0 group">
+                        {/* Expanding background circle */}
+                        <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+                        {/* Button text */}
+                        <span className="relative z-10 text-black group-hover:text-white transition duration-500">
+                            Get Started
+                        </span>
+                    </button>
+
                 </div>
             </div>
         </div>

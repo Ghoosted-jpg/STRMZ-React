@@ -20,11 +20,18 @@ const Navbar = () => {
                 <Link to="/ContactUs" className="px-3 py-1 font-semibold hover:bg-[#CBE26B] hover:rounded-xl rounded-xl transition duration-500">Contact Us</Link>
 
                 {/* Call Button */}
-                <div className="flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer">
-                    <div className="inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
+                <div className="relative flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-black cursor-pointer overflow-hidden">
+                    {/* Expanding background animation */}
+                    <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-[#CBE26B] rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+                    {/* Content */}
+                    <div className="relative z-10 inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
                         <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
                     </div>
-                    <Link to="/login" className="pl-0 font-aileron font-semibold group-hover:text-black transition duration-500">
+                    <Link
+                        to="#"
+                        className="relative z-10 pl-0 font-aileron text-lg group-hover:text-black transition duration-500"
+                    >
                         Schedule A Call
                     </Link>
                 </div>

@@ -93,21 +93,28 @@ const Testimonials = () => {
                             className="custom-cursor mt-10 md:flex md:justify-center md:flex-wrap md:gap-6 mx-auto"
                         >
                             {currentItems.map((item) => (
-                                <div key={item.id} className="bg-[#FFFFFF] p-10 rounded-[15px] shadow-lg group transition-transform duration-300 hover:-rotate-3 hover:bg-[#CBE26B] w-[300px] xs:w-[400px] sm:w-[424px] md:w-[350px] mx-auto">
-                                    <div className="flex items-center mb-4">
-                                        <img src={item.img} alt={item.name} className="w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full mr-3" />
-                                        <div>
-                                            <h3 className="font-aileron font-bold text-[18px] xs:text-[20px] md:text-[18px]">{item.name}</h3>
-                                            <p className="font-aileron text-[14px] xs:text-[16px] sm:text-[18px] md:xs:text-[16px] text-[#474747]">{item.occupation}</p>
+                                <div key={item.id} className="relative overflow-hidden bg-[#FFFFFF] p-10 rounded-[15px] shadow-lg group transition-transform duration-300 hover:-rotate-3 w-[300px] xs:w-[400px] sm:w-[424px] md:w-[350px] mx-auto">
+                                    {/* Animated Background Fill */}
+                                    <span className="absolute bottom-0 right-0 w-0 h-0 bg-[#CBE26B] rounded-[15px] transition-all duration-500 ease-out group-hover:w-full group-hover:h-full z-0"></span>
+
+                                    {/* Foreground Content */}
+                                    <div className="relative z-10">
+                                        <div className="flex items-center mb-4">
+                                            <img src={item.img} alt={item.name} className="w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full mr-3" />
+                                            <div>
+                                                <h3 className="font-aileron font-bold text-[18px] xs:text-[20px] md:text-[18px]">{item.name}</h3>
+                                                <p className="font-aileron text-[14px] xs:text-[16px] sm:text-[18px] md:xs:text-[16px] text-[#474747]">{item.occupation}</p>
+                                            </div>
                                         </div>
+                                        <div className="flex justify-between mt-6">
+                                            <p className="font-aileron font-bold text-[20px] xs:text-[22px] sm:text-[24px] md:text-[22px] md:w-[220px]">{item.quote}</p>
+                                            <img src={TestimonialVector2} alt="vector" className="w-[48px] h-[38px] block group-hover:hidden" />
+                                            <img src={TestimonialVector} alt="vector" className="w-[48px] h-[38px] hidden group-hover:block" />
+                                        </div>
+                                        <p className="text-[16px] xs:text-[18px] text-[18px] font-aileron text-[#9B9A99] group-hover:text-black mt-6">{item.Comments}</p>
                                     </div>
-                                    <div className="flex justify-between mt-6">
-                                        <p className="font-aileron font-bold text-[20px] xs:text-[22px] sm:text-[24px] md:text-[22px] md:w-[220px]">{item.quote}</p>
-                                        <img src={TestimonialVector2} alt="vector" className="w-[48px] h-[38px] block group-hover:hidden" />
-                                        <img src={TestimonialVector} alt="vector" className="w-[48px] h-[38px] hidden group-hover:block" />
-                                    </div>
-                                    <p className="text-[16px] xs:text-[18px] text-[18px] font-aileron  text-[#9B9A99] group-hover:text-black mt-6">{item.Comments}</p>
                                 </div>
+
                             ))}
                         </motion.div>
                     </AnimatePresence>
@@ -123,20 +130,25 @@ const Testimonials = () => {
                         className="hidden lg:flex justify-around custom-cursor mt-10 mx-auto"
                     >
                         {currentItems.map((item) => (
-                            <div key={item.id} className="bg-[#FFFFFF] p-10 rounded-[15px] shadow-lg group transition-transform duration-300 hover:-rotate-3 hover:bg-[#CBE26B] lg:w-[424px] xl:w-[400px]">
-                                <div className="flex items-center mb-4">
-                                    <img src={item.img} alt={item.name} className="w-24 h-24 rounded-full mr-3" />
-                                    <div>
-                                        <h3 className="font-bold text-[24px]">{item.name}</h3>
-                                        <p className="text-[18px] text-[#474747]">{item.occupation}</p>
+                            <div key={item.id} className="relative overflow-hidden bg-[#FFFFFF] p-10 rounded-[15px] shadow-lg group transition-transform duration-300 hover:-rotate-3 lg:w-[424px] xl:w-[400px]">
+                                <span className="absolute bottom-0 right-0 w-0 h-0 bg-[#CBE26B] transition-all duration-500 ease-out group-hover:w-full group-hover:h-full z-0 rounded-[15px]"></span>
+
+                                <div className="relative z-10">
+                                    <div className="flex items-center mb-4">
+                                        <img src={item.img} alt={item.name} className="w-24 h-24 rounded-full mr-3" />
+                                        <div>
+                                            <h3 className="font-bold text-[24px]">{item.name}</h3>
+                                            <p className="text-[18px] text-[#474747]">{item.occupation}</p>
+                                        </div>
                                     </div>
+                                    <div className="flex justify-between mt-6">
+                                        <p className="font-aileron font-bold text-[24px]">{item.quote}</p>
+                                        <img src={TestimonialVector2} alt="vector" className="w-[58px] h-[48px] block group-hover:hidden" />
+                                        <img src={TestimonialVector} alt="vector" className="w-[58px] h-[48px] hidden group-hover:block" />
+                                    </div>
+                                    <p className="w-[339px] text-[18px] font-aileron  text-[#9B9A99] group-hover:text-black mt-6">{item.Comments}</p>
+
                                 </div>
-                                <div className="flex justify-between mt-6">
-                                    <p className="font-aileron font-bold text-[24px]">{item.quote}</p>
-                                    <img src={TestimonialVector2} alt="vector" className="w-[58px] h-[48px] block group-hover:hidden" />
-                                    <img src={TestimonialVector} alt="vector" className="w-[58px] h-[48px] hidden group-hover:block" />
-                                </div>
-                                <p className="w-[339px] text-[18px] font-aileron  text-[#9B9A99] group-hover:text-black mt-6">{item.Comments}</p>
                             </div>
                         ))}
                     </motion.div>

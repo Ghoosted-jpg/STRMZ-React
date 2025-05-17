@@ -85,13 +85,22 @@ const ServiceDetailSection = () => {
                                 } bg-[#24261F] w-[300px] xs:w-[400px] sm:w-[544px] rounded-3xl`}>
                             <p className='font-aileron text-[#F3F3F2] w-[250px] xs:w-auto sm:w-[480px] text-base xs:text-lg pb-4'>Outsourcing your Social Media gives many entrepreneurs relief. You too would probably rather focus on your core business than having to constantly think about your online visibility and the right social media posts. At STRMZ we take care of every step. From developing a content strategy, advising on the best platforms for your brand to creating content.</p>
                             <Link to="#">
-                                <div className='bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group hover:bg-[#CBE26B] transition duration-500'>
-                                    <div className=' flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500'>
-                                        <ChevronRight className='w-8 h-7 group-hover:text-[#CBE26B] transition duration-500' />
+                                <div className="relative overflow-hidden bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group transition duration-500">
+                                    {/* Animated background fill */}
+                                    <span className="absolute top-0 left-0 h-full w-0 bg-[#CBE26B] transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+
+                                    {/* Icon */}
+                                    <div className="relative z-10 flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500">
+                                        <ChevronRight className="w-8 h-7 group-hover:text-[#CBE26B] transition duration-500" />
                                     </div>
-                                    <p className='font-aileron text-base xs:text-lg group-hover:text-[#24261F] '>Read More</p>
+
+                                    {/* Text */}
+                                    <p className="relative z-10 font-aileron text-base xs:text-lg group-hover:text-[#24261F] transition duration-500">
+                                        Read More
+                                    </p>
                                 </div>
                             </Link>
+
                         </div>
                         <div onClick={() => handleSectionChange('Social')} className='flex items-center gap-x-2 xs:gap-x-4 cursor-pointer w-[300px] xs:w-[400px]'>
                             <div className='flex justify-center items-center bg-[#CBE26B] w-[42px] h-[42px] rounded-full'>
@@ -116,13 +125,22 @@ const ServiceDetailSection = () => {
                                 } bg-[#24261F] w-[300px] xs:w-[400px] sm:w-[544px] rounded-3xl`}>
                             <p className='font-aileron text-[#F3F3F2] w-[250px] xs:w-auto sm:w-[480px] text-base xs:text-lg pb-4'>Outsourcing your Social Media gives many entrepreneurs relief. You too would probably rather focus on your core business than having to constantly think about your online visibility and the right social media posts. At STRMZ we take care of every step. From developing a content strategy, advising on the best platforms for your brand to creating content.</p>
                             <Link to="#">
-                                <div className='bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group hover:bg-[#CBE26B] transition duration-500'>
-                                    <div className=' flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500'>
-                                        <ChevronRight className='w-8 h-7 group-hover:text-[#CBE26B] transition duration-500' />
+                                <div className="relative overflow-hidden bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group transition duration-500">
+                                    {/* Animated background fill */}
+                                    <span className="absolute top-0 left-0 h-full w-0 bg-[#CBE26B] transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+
+                                    {/* Icon */}
+                                    <div className="relative z-10 flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500">
+                                        <ChevronRight className="w-8 h-7 group-hover:text-[#CBE26B] transition duration-500" />
                                     </div>
-                                    <p className='font-aileron text-base xs:text-lg group-hover:text-[#24261F] '>Read More</p>
+
+                                    {/* Text */}
+                                    <p className="relative z-10 font-aileron text-base xs:text-lg group-hover:text-[#24261F] transition duration-500">
+                                        Read More
+                                    </p>
                                 </div>
                             </Link>
+
                         </div>
                         <div onClick={() => handleSectionChange('Google')} className='flex items-center gap-x-2 xs:gap-x-4 cursor-pointer w-[300px]'>
                             <div className='flex justify-center items-center bg-[#CBE26B] w-[42px] h-[42px] rounded-full'>
@@ -147,13 +165,22 @@ const ServiceDetailSection = () => {
                                 } bg-[#24261F] w-[300px] xs:w-[400px] sm:w-[544px] rounded-3xl`}>
                             <p className='font-aileron text-[#F3F3F2] w-[250px] xs:w-auto sm:w-[480px] text-base xs:text-lg pb-4'>Outsourcing your Social Media gives many entrepreneurs relief. You too would probably rather focus on your core business than having to constantly think about your online visibility and the right social media posts. At STRMZ we take care of every step. From developing a content strategy, advising on the best platforms for your brand to creating content.</p>
                             <Link to="#">
-                                <div className='bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group hover:bg-[#CBE26B] transition duration-500'>
-                                    <div className=' flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500'>
-                                        <ChevronRight className='w-8 h-7 group-hover:text-[#CBE26B] transition duration-500' />
+                                <div className="relative overflow-hidden bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group transition duration-500">
+                                    {/* Animated background fill */}
+                                    <span className="absolute top-0 left-0 h-full w-0 bg-[#CBE26B] transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+
+                                    {/* Icon */}
+                                    <div className="relative z-10 flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500">
+                                        <ChevronRight className="w-8 h-7 group-hover:text-[#CBE26B] transition duration-500" />
                                     </div>
-                                    <p className='font-aileron text-base xs:text-lg group-hover:text-[#24261F] '>Read More</p>
+
+                                    {/* Text */}
+                                    <p className="relative z-10 font-aileron text-base xs:text-lg group-hover:text-[#24261F] transition duration-500">
+                                        Read More
+                                    </p>
                                 </div>
                             </Link>
+
                         </div>
                         <div onClick={() => handleSectionChange('Ad')} className='flex items-center gap-x-2 xs:gap-x-4 cursor-pointer'>
                             <div className='flex justify-center items-center bg-[#CBE26B] w-[42px] h-[42px] rounded-full'>
@@ -178,13 +205,22 @@ const ServiceDetailSection = () => {
                                 } bg-[#24261F] w-[300px] xs:w-[400px] sm:w-[544px] rounded-3xl`}>
                             <p className='font-aileron text-[#F3F3F2] w-[250px] xs:w-auto sm:w-[480px] text-base xs:text-lg pb-4'>Outsourcing your Social Media gives many entrepreneurs relief. You too would probably rather focus on your core business than having to constantly think about your online visibility and the right social media posts. At STRMZ we take care of every step. From developing a content strategy, advising on the best platforms for your brand to creating content.</p>
                             <Link to="#">
-                                <div className='bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group hover:bg-[#CBE26B] transition duration-500'>
-                                    <div className=' flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500'>
-                                        <ChevronRight className='w-8 h-7 group-hover:text-[#CBE26B] transition duration-500' />
+                                <div className="relative overflow-hidden bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group transition duration-500">
+                                    {/* Animated background fill */}
+                                    <span className="absolute top-0 left-0 h-full w-0 bg-[#CBE26B] transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+
+                                    {/* Icon */}
+                                    <div className="relative z-10 flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500">
+                                        <ChevronRight className="w-8 h-7 group-hover:text-[#CBE26B] transition duration-500" />
                                     </div>
-                                    <p className='font-aileron text-base xs:text-lg group-hover:text-[#24261F] '>Read More</p>
+
+                                    {/* Text */}
+                                    <p className="relative z-10 font-aileron text-base xs:text-lg group-hover:text-[#24261F] transition duration-500">
+                                        Read More
+                                    </p>
                                 </div>
                             </Link>
+
                         </div>
                         <div onClick={() => handleSectionChange('Seo')} className='flex items-center gap-x-2 xs:gap-x-4 cursor-pointer'>
                             <div className='flex justify-center items-center bg-[#CBE26B] w-[42px] h-[42px] rounded-full'>
@@ -197,13 +233,22 @@ const ServiceDetailSection = () => {
                                 } bg-[#24261F] w-[300px] xs:w-[400px] sm:w-[544px] rounded-3xl`}>
                             <p className='font-aileron text-[#F3F3F2] w-[250px] xs:w-auto sm:w-[480px] text-base xs:text-lg pb-4'>Outsourcing your Social Media gives many entrepreneurs relief. You too would probably rather focus on your core business than having to constantly think about your online visibility and the right social media posts. At STRMZ we take care of every step. From developing a content strategy, advising on the best platforms for your brand to creating content.</p>
                             <Link to="#">
-                                <div className='bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group hover:bg-[#CBE26B] transition duration-500'>
-                                    <div className=' flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500'>
-                                        <ChevronRight className='w-8 h-7 group-hover:text-[#CBE26B] transition duration-500' />
+                                <div className="relative overflow-hidden bg-[#F3F3F3] w-[164px] h-[54px] rounded-[32px] flex items-center pl-[8px] gap-x-[8px] group transition duration-500">
+                                    {/* Animated background fill */}
+                                    <span className="absolute top-0 left-0 h-full w-0 bg-[#CBE26B] transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+
+                                    {/* Icon */}
+                                    <div className="relative z-10 flex justify-center items-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-[#24261F] transition duration-500">
+                                        <ChevronRight className="w-8 h-7 group-hover:text-[#CBE26B] transition duration-500" />
                                     </div>
-                                    <p className='font-aileron text-base xs:text-lg group-hover:text-[#24261F] '>Read More</p>
+
+                                    {/* Text */}
+                                    <p className="relative z-10 font-aileron text-base xs:text-lg group-hover:text-[#24261F] transition duration-500">
+                                        Read More
+                                    </p>
                                 </div>
                             </Link>
+
                         </div>
                     </div>
                     <div

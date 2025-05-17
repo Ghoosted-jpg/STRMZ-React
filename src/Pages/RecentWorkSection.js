@@ -128,11 +128,20 @@ const RecentWorkSection = () => {
                 </motion.div>
             </div>
             <div className="w-[205px] mx-auto mt-28">
-                <div className="flex items-center space-x-2 inline-flex bg-white text-[#24261F] w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer">
-                    <div className="inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
+                <div className="relative group overflow-hidden inline-flex items-center space-x-2 bg-white text-white w-[204px] py-2 rounded-full cursor-pointer">
+                    {/* Expanding radial background from center */}
+                    <span className="absolute top-1/2 left-1/2 w-0 h-0 bg-[#CBE26B] rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out group-hover:w-[400px] group-hover:h-[400px] z-0"></span>
+
+                    {/* Icon container */}
+                    <div className="relative z-10 inline-flex items-center justify-center bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 w-[38px] h-[38px] ml-2">
                         <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
                     </div>
-                    <Link to="/login" className="pl-0 font-aileron font-semibold group-hover:text-black transition duration-500">
+
+                    {/* Text */}
+                    <Link
+                        to="#"
+                        className="relative z-10 pl-0 font-aileron text-lg text-black transition duration-500"
+                    >
                         Schedule A Call
                     </Link>
                 </div>

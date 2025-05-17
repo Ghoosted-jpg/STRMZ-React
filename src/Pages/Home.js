@@ -219,17 +219,31 @@ const Home = () => {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
           viewport={{ once: true }}
           className="flex justify-center items-center md:flex-row md:space-x-3 md:space-y-0 my-6 flex-col space-y-5">
-          <div className="flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer">
-            <div className="inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
+          <div className="relative flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-black cursor-pointer overflow-hidden">
+            {/* Expanding background animation */}
+            <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-[#CBE26B] rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+            {/* Content */}
+            <div className="relative z-10 inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
               <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
             </div>
-            <Link to="/login" className="pl-0 font-aileron text-lg group-hover:text-black transition duration-500">
+            <Link
+              to="#"
+              className="relative z-10 pl-0 font-aileron text-lg group-hover:text-black transition duration-500"
+            >
               Schedule A Call
             </Link>
           </div>
+
           <div className="relative">
-            <button className="font-aileron bg-[#CBE26B] w-[185px] h-[54px] text-lg text-center rounded-full hover:bg-black hover:text-white transition duration-500">
-              Explore Services
+            <button className="relative overflow-hidden font-aileron bg-[#CBE26B] w-[185px] h-[54px] text-lg text-center rounded-full transition duration-500 group">
+              {/* Expanding background on hover */}
+              <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+              {/* Button text */}
+              <span className="relative z-10 text-black group-hover:text-white transition duration-500">
+                Explore Services
+              </span>
             </button>
             <span className="absolute rounded-full bg-[#6A6C62] w-4 h-4 top-0 -right-6"></span>
           </div>
@@ -342,14 +356,14 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
-          viewport={{once: true}}
+          viewport={{ once: true }}
           className="xl:w-[392px] xl:h-[320px] lg:w-[330px] lg:h-[270px] md:w-[392px] md:h-[320px]  relative flex justify-center flex-col overflow-hidden m-auto mt-10 w-[300px] h-[245px] flex-shrink-0"
           style={{ backgroundImage: `url(${Folder})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             className="flex justify-center items-center bg-black md:w-16 md:h-16 rounded-full absolute top-4 left-8 w-12 h-12">
             <Rocket className="absolute md:top-4 md:left-4 text-[#CBE26B] md:w-8 md:h-8 w-6 h-6 top-3 left-3" />
           </motion.div>
@@ -357,7 +371,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
           >
             <h1 className="font-anton md:text-[28px] w-[328px] p-2 md:pl-10 mt-2 text-[24px] pl-8 lg:mt-12">Online Growth for your Business</h1>
             <p className="font-aileron text-[#4C5041] md:pl-10 md:text-lg text-base pl-8 pr-5">The online marketing specialists from STRMZ, who suit you .</p>
@@ -368,14 +382,14 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
-          viewport={{once: true}}
+          viewport={{ once: true }}
           className="xl:w-[392px] xl:h-[320px] lg:w-[330px] lg:h-[270px] md:w-[392px] md:h-[320px] relative flex justify-center flex-col overflow-hidden m-auto mt-10 w-[300px] h-[245px] flex-shrink-0"
           style={{ backgroundImage: `url(${Folder})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             className="flex justify-center items-center bg-black md:w-16 md:h-16 rounded-full absolute top-4 left-8 w-12 h-12">
             <Calendar className="absolute md:top-4 md:left-4 text-[#CBE26B] md:w-8 md:h-8 w-6 h-6 top-3 left-3" />
           </motion.div>
@@ -383,7 +397,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
           >
             <h1 className="font-anton md:text-[28px] w-[328px] p-2 md:pl-10 z-10 text-[24px] pl-8">30 Days Trial Period!</h1>
             <p className="font-aileron text-[#4C5041] md:pl-10 z-10 md:text-lg text-base pl-8 pr-5">The online marketing specialists from STRMZ, who suit you .</p>
@@ -394,14 +408,14 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
-          viewport={{once: true}}
+          viewport={{ once: true }}
           className="xl:w-[392px] xl:h-[320px] lg:w-[330px] lg:h-[270px] md:w-[392px] md:h-[320px] relative flex justify-center flex-col  overflow-hidden m-auto mt-10 w-[300px] h-[245px] flex-shrink-0"
           style={{ backgroundImage: `url(${Folder})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
             className="flex justify-center items-center bg-black md:w-16 md:h-16 rounded-full absolute top-4 left-8 w-12 h-12">
             <Sparkle className="absolute md:top-4 md:left-4 text-[#CBE26B] md:w-8 md:h-8 w-6 h-6 top-3 left-3" />
           </motion.div>
@@ -409,7 +423,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-            viewport={{once: true}}
+            viewport={{ once: true }}
           >
             <h1 className="font-anton md:text-[28px] p-2 md:pl-10 text-[24px] pl-8">30+ Satisfied Customers</h1>
             <p className="font-aileron text-[#4C5041] md:pl-10 md:text-lg text-base pl-8 pr-5">The online marketing specialists from STRMZ, who suit you.</p>
@@ -438,14 +452,27 @@ const Home = () => {
                 alt="Circle"
                 className="absolute -z-0 top-[40px] left-20 xs:left-24 sm:left-[107px] md:left-[143px] lg:top-10 lg:left-[155px] w-[66px] xs:w-[73px] sm:w-[84px] md:w-[97px] lg:w-auto" />
             </div>
-            <div className="flex items-center space-x-2 inline-flex bg-white text-black w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer items-end absolute bottom-2 right-4 hidden lg:inline-flex">
-              <div className="inline-flex items-center justify-center bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 w-[38px] h-[38px] ml-2">
-                <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
+            <div className="absolute bottom-2 right-4 hidden lg:inline-flex">
+              <div className="relative group overflow-hidden inline-flex items-center space-x-2 bg-white text-black w-[204px] py-2 rounded-full cursor-pointer">
+                {/* Background Overlay */}
+                <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-[#CBE26B] rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+
+                {/* Icon */}
+                <div className="relative z-10 inline-flex items-center justify-center bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 w-[38px] h-[38px] ml-2">
+                  <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
+                </div>
+
+                {/* Text */}
+                <Link
+                  to="#"
+                  className="relative z-10 pl-0 font-aileron text-lg transition duration-500"
+                >
+                  Schedule A Call
+                </Link>
               </div>
-              <Link to="/login" className="pl-0 font-semibold group-hover:text-black transition duration-500">
-                Schedule A Call
-              </Link>
             </div>
+
 
           </div>
         </div>
@@ -610,14 +637,24 @@ const Home = () => {
               className="bg-no-repeat bg-cover bg-right relative rounded-tl-2xl rounded-bl-2xl pb-4 w-[280px] xs:w-[350px] sm:w-[280px] md:w-[350px] h-auto lg:w-[470px] lg:h-[260px] xl:w-[544px] xl:h-[260px] p-3 xs:p-6 sm:p-3 md:p-6 lg:p-8">
               <h1 className="text-[#F3F3F2] font-anton text-[20px] xs:text-[24px] sm:text-[20px] md:text-[24px] lg:text-[28px] w-[200px] xs:w-[250px] sm:w-[200px] md:w-[250px] lg:w-[420px] ">Not yet sure which service is best suited for your online growth?</h1>
               <p className="font-aileron text-base xs:text-lg sm:text-base md:text-lg text-[#F3F3F2] my-4">Schedule a free introductory meeting now!</p>
-              <div className="flex items-center space-x-2 inline-flex bg-white text-white w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer">
-                <div className="inline-flex items-center justify-center bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 w-[38px] h-[38px] ml-2">
+              <div className="relative group overflow-hidden inline-flex items-center space-x-2 bg-white text-white w-[204px] py-2 rounded-full cursor-pointer">
+                {/* Expanding radial background from center */}
+                <span className="absolute top-1/2 left-1/2 w-0 h-0 bg-[#CBE26B] rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out group-hover:w-[400px] group-hover:h-[400px] z-0"></span>
+
+                {/* Icon container */}
+                <div className="relative z-10 inline-flex items-center justify-center bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 w-[38px] h-[38px] ml-2">
                   <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
                 </div>
-                <Link to="/login" className="pl-0 font-semibold text-black group-hover:text-black transition duration-500">
+
+                {/* Text */}
+                <Link
+                  to="#"
+                  className="relative z-10 pl-0 font-semibold text-black transition duration-500"
+                >
                   Schedule A Call
                 </Link>
               </div>
+
             </div>
           </div>
         </div>
@@ -647,11 +684,18 @@ const Home = () => {
           </div>
           <div className="md:ml-4 lg:ml-0">
             <p className="font-aileron w-[300px] xs:w-[400px] sm:w-[542px] lg:w-[400px] xl:w-[542px] text-base xs:text-[18px] text-[#9B9A99]">Cup of coffee? Schedule a free introductory meeting. We start with a no-obligation conversation to get to know you & your company better. Here we look at how your company can grow further.</p>
-            <div className="flex items-center space-x-4 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-[#CBE26B] cursor-pointer mt-5">
-              <div className="ml-2 inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500">
+            <div className="relative flex items-center space-x-2 inline-flex bg-black text-white w-[204px] py-2 rounded-full group hover:bg-black cursor-pointer overflow-hidden mt-5">
+              {/* Expanding background animation */}
+              <span className="absolute top-1/2 left-1/2 w-0 h-0 -translate-x-1/2 -translate-y-1/2 bg-[#CBE26B] rounded-full transition-all duration-500 ease-out group-hover:w-64 group-hover:h-64 z-0"></span>
+
+              {/* Content */}
+              <div className="relative z-10 inline-flex items-center justify-center w-[38px] h-[38px] bg-[#CBE26B] rounded-full group-hover:bg-black transition duration-500 ml-2">
                 <Headphones className="w-[22px] h-[22px] text-black group-hover:text-white transition duration-500" />
               </div>
-              <Link to="/login" className="pl-0 font-semibold group-hover:text-black transition duration-500">
+              <Link
+                to="#"
+                className="relative z-10 pl-0 font-aileron text-lg group-hover:text-black transition duration-500"
+              >
                 Schedule A Call
               </Link>
             </div>
