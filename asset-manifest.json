@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/STRMZ-React/static/css/main.a5c7090a.css",
-    "main.js": "/STRMZ-React/static/js/main.d76c420e.js",
+    "main.css": "/STRMZ-React/static/css/main.5e71be6c.css",
+    "main.js": "/STRMZ-React/static/js/main.d258f105.js",
     "static/js/453.b72bf81c.chunk.js": "/STRMZ-React/static/js/453.b72bf81c.chunk.js",
     "static/media/AboutUsHeaderImg.png": "/STRMZ-React/static/media/AboutUsHeaderImg.9f924fca9ec82baf1978.png",
     "static/media/ServiceDetailIMG.png": "/STRMZ-React/static/media/ServiceDetailIMG.5bc8224677e0b32fadb6.png",
@@ -26,12 +26,12 @@
     "static/media/Rectangle 58.png": "/STRMZ-React/static/media/Rectangle 58.5b8cd535df22cb5abe27.png",
     "static/media/Mask group.png": "/STRMZ-React/static/media/Mask group.37994ed3811112d3def0.png",
     "index.html": "/STRMZ-React/index.html",
-    "main.a5c7090a.css.map": "/STRMZ-React/static/css/main.a5c7090a.css.map",
-    "main.d76c420e.js.map": "/STRMZ-React/static/js/main.d76c420e.js.map",
+    "main.5e71be6c.css.map": "/STRMZ-React/static/css/main.5e71be6c.css.map",
+    "main.d258f105.js.map": "/STRMZ-React/static/js/main.d258f105.js.map",
     "453.b72bf81c.chunk.js.map": "/STRMZ-React/static/js/453.b72bf81c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5c7090a.css",
-    "static/js/main.d76c420e.js"
+    "static/css/main.5e71be6c.css",
+    "static/js/main.d258f105.js"
   ]
 }
