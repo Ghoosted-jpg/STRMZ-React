@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Headphones } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -7,6 +7,29 @@ import Arrow from '../Images/Vector1.png';
 import Circle from '../Images/circle.png';
 import HeaderLine from '../Images/Vector.png';
 const TrialSection = () => {
+    const [firstlineWidth, setFirstLineWidth] = useState('80px');
+
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if (width >= 1024) {
+                setFirstLineWidth('150px');       // lg and above
+            }
+            else if (width >= 768) {
+                setFirstLineWidth('142px');       // md and above
+            } else if (width >= 640) {
+                setFirstLineWidth('130px');       // sm
+            }
+            else {
+                setFirstLineWidth('80px');       // base
+            }
+        };
+
+        handleResize(); // Set on initial load
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return (
         <div className='w-full relative sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[500px] xxl:h-[554px]'>
             <h1 className='absolute font-anton inset-0 text-[55px] sm:text-[85px] md:text-[100px] lg:text-[135px] xl:text-[170px] xxl:text-[198px] text-center text-[#F3F3F3] hidden xs:block'>FREE INTRODUCTION.</h1>
@@ -28,7 +51,18 @@ const TrialSection = () => {
                     className='absolute top-2 xs:top-0 md:top-1 lg:top-10 xl:top-16 right-1 md:right-2 lg:right-20 xl:right-32 w-[40px] h-[50px] sm:w-[50px] sm:h-[60px] md:w-[60px] md:h-[70px]lg:w-[78px] lg:h-[89px]' />
                 <div className='relative xl:-mt-10'>
                     <h1 className='relative font-anton w-[320px] xs:w-auto text-center text-[28px] sm:text-[43px] md:text-[48px] lg:text-[52px]'>Online Growth For Your Company</h1>
-                    <img src={HeaderLine} alt="HeaderLine" className='absolute left-28 md:left-32 lg:left-36 top-[34px] sm:top-[52px] md:top-[58px] lg:top-16  w-[80px] sm:w-[130px] md:w-[141px] lg:w-[157px]' />
+                    <motion.img
+                        initial={{ width: 0 }} // Starts with 0 width
+                        whileInView={{ width: firstlineWidth }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeInOut",
+                            delay: 0.5,
+                        }}
+                        viewport={{ once: true }}
+                        src={HeaderLine}
+                        alt="HeaderLine"
+                        className='absolute left-28 xs:left-[75px] xs:left-28 md:left-32 lg:left-36 top-[34px] sm:top-[52px] md:top-[58px] lg:top-16' />
                 </div>
                 <div className='relative'>
                     <h1 className='relative z-10 font-anton text-[28px] sm:text-[43px] md:text-[48px] xl:text-[52px]'>Start Your Trial Period</h1>

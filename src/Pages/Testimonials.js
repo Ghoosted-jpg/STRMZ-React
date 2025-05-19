@@ -73,12 +73,16 @@ const Testimonials = () => {
                             className="absolute -top-1 left-[73px] xs:left-[83px] sm:left-[137px] md:left-[98px] lg:left-28 w-[130px] xs:w-[150px] sm:w-[223px] md:w-[205px] lg:w-[250px] z-0" />
                     </div>
                     <div className="flex justify-between w-[108px] md:-mt-8 hidden md:flex">
-                        <button onClick={prev} className="bg-[#F0F0F0] rounded-full group flex items-center justify-center cursor-pointer hover:bg-[#CBE26B] w-[50px] h-[50px]">
-                            <MoveLeft className="text-[#717171] group-hover:text-[#000000] w-6 h-6" />
+                        <button onClick={prev} className="relative overflow-hidden bg-[#F0F0F0] rounded-full group flex items-center justify-center cursor-pointer w-[50px] h-[50px]">
+                            <span className="absolute inset-0 bg-[#CBE26B] scale-x-0 origin-right transition-transform duration-500 z-0 group-hover:scale-x-100"></span>
+                            <MoveLeft className="relative z-10 text-[#717171] group-hover:text-[#000000] w-6 h-6" />
                         </button>
-                        <button onClick={next} className="bg-[#F0F0F0] rounded-full group flex items-center justify-center cursor-pointer hover:bg-[#CBE26B] w-[50px] h-[50px]">
-                            <MoveRight className="text-[#717171] group-hover:text-[#000000] w-6 h-6" />
+
+                        <button onClick={next} className="relative overflow-hidden bg-[#F0F0F0] rounded-full group flex items-center justify-center cursor-pointer w-[50px] h-[50px]">
+                            <span className="absolute inset-0 bg-[#CBE26B] scale-x-0 origin-left transition-transform duration-500 z-0 group-hover:scale-x-100"></span>
+                            <MoveRight className="relative z-10 text-[#717171] group-hover:text-[#000000] w-6 h-6" />
                         </button>
+
                     </div>
                 </div>
                 {/* FOR SCREEN SIZE LESS THAN 768PX */}

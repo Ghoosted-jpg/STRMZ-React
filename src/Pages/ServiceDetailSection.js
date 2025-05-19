@@ -13,6 +13,7 @@ import ServiceDetailImage from "../Images/ServiceDetailIMG.png";
 
 const ServiceDetailSection = () => {
     const [activeSection, setActiveSection] = useState('Social');
+    const [firstlineWidth, setFirstLineWidth] = useState('');
     function handleSectionChange(section) {
         setActiveSection(section);
     }
@@ -26,6 +27,16 @@ const ServiceDetailSection = () => {
                 setLineWidth('300px'); // Example width for small screens
             } else {
                 setLineWidth('382px'); // Example width for medium screens
+            }
+            const width = window.innerWidth;
+            if (width >= 640) {
+                setFirstLineWidth('221px');       // sm
+            }
+            else if (width >= 425) {
+                setFirstLineWidth('152px');       // xs
+            }
+            else {
+                setFirstLineWidth('116px');       // base
             }
         };
 
@@ -55,7 +66,18 @@ const ServiceDetailSection = () => {
                         src={Circle}
                         alt='Circle'
                         className='absolute z-0 top-0 left-[82px] xs:left-[115px] sm:-top-[4px] sm:left-[125px] md:-top-[10px] md:left-[118px] w-[96px] h-[46px] xs:w-[123px] xs:h-[56px] sm:w-[178px] sm:h-[85px] md:w-[178px] md:h-[96px]' />
-                    <img src={HeaderLine} alt='HeaderLine' className='absolute right-4 top-[119px] xs:right-6 xs:top-[152px] sm:right-0 sm:top-[220px] md:right-2 md:top-[141px] w-[116px] xs:w-[152px] sm:w-[221px] md:w-[221px]' />
+                    <motion.img
+                        initial={{ width: 0 }} // Starts with 0 width
+                        whileInView={{ width: firstlineWidth }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeInOut",
+                            delay: 0.5,
+                        }}
+                        viewport={{ once: true }}
+                        src={HeaderLine}
+                        alt='HeaderLine'
+                        className='absolute left-[170px] top-[119px] xs:left-56 xs:top-[152px] sm:left-[280px] sm:top-[220px] md:left-[510px] md:top-[141px]' />
                     <span className='absolute top-8 -right-2 sm:-right-12 md:-top-10 md:right-4 lg:top-8 lg:-right-20 xl:-right-48 bg-[#626262] w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full'></span>
                     <span className='absolute top-20 -left-2 xs:left-0 sm:-left-10 md:-left-2 lg:top-20 lg:-left-20 bg-[#333333] w-2 h-2 sm:w-3 sm:h-3 rounded-full'></span>
                 </div>

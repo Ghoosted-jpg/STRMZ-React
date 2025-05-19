@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import HeaderLine from "../Images/Vector.png";
 import Arrow from "../Images/Vector1.png";
@@ -12,6 +12,27 @@ import WorkingSection from "./WorkingSection";
 import HistorySection from "./HistorySection";
 import ServiceDetailSection from "./ServiceDetailSection";
 const Services = () => {
+    const [firstlineWidth, setFirstLineWidth] = useState('');
+
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if (width >= 640) {
+                setFirstLineWidth('200px');       // sm
+            }
+            else if (width >= 425) {
+                setFirstLineWidth('130px');       // xs
+            }
+            else {
+                setFirstLineWidth('110px');       // base
+            }
+        };
+
+        handleResize(); // Set on initial load
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return (
         <div className="w-full">
             <div className="max-w-7xl mx-auto">
@@ -26,11 +47,16 @@ const Services = () => {
                             WEBSITE DESIGN AND DEVELOPMENT
                         </h1>
                         <motion.img
+                            initial={{ width: 0 }} // Starts with 0 width
+                            whileInView={{ width: firstlineWidth }}
+                            transition={{
+                                duration: 0.8,
+                                ease: "easeInOut",
+                                delay: 0.5,
+                            }}
+                            viewport={{ once: true }}
                             src={HeaderLine}
-                            initial={{ opacity: 0, x: 50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="absolute right-2 xs:right-7 sm:right-5 md:right-0 top-[44px] xs:top-[54px] sm:top-[80px] md:top-[88px] w-[110px] xs:w-[130px] sm:w-[200px] md:w-auto h-auto" />
+                            className="absolute left-[182px] xs:left-[243px] sm:left-[350px] md:left-[368px] top-[44px] xs:top-[54px] sm:top-[80px] md:top-[88px] md:w-auto h-auto" />
                         <motion.img
                             src={Arrow}
                             animate={{ y: [0, -10, 0] }}
@@ -66,10 +92,10 @@ const Services = () => {
             </div>
             <SecondSectionServices />
             <ThirdSectionServices />
-            <RecentWorkSection/>
-            <WorkingSection/>
-            <HistorySection/>
-            <ServiceDetailSection/>
+            <RecentWorkSection />
+            <WorkingSection />
+            <HistorySection />
+            <ServiceDetailSection />
             <div className="bg-[#F3F3F2] pt-[37px] lg:pt-[74px] pb-[34px]">
                 <ContactUsSection />
             </div>

@@ -46,7 +46,10 @@ const ContactUs = () => {
                             <input type='text' placeholder='Mobile' className='w-full xl:w-[503px] h-[61px] rounded-xl p-2 pl-6 focus:outline-none placeholder:font-aileron placeholder:font-light placeholder:text-[#222222]' />
                             <input type='text' placeholder='Subject, Scope of work' className='sm:col-span-2 w-full h-[61px] rounded-xl p-2 pl-6 focus:outline-none placeholder:font-aileron placeholder:font-light placeholder:text-[#222222]' />
                             <textarea placeholder='Message' className='sm:col-span-2 w-full h-[262px] rounded-xl p-2 pt-4 pl-6 focus:outline-none placeholder:font-aileron placeholder:font-light placeholder:text-[#222222] resize-none' />
-                            <button className='sm:col-span-2 w-[250px] xs:w-[350px] sm:w-[550px] h-[60px] xs:h-[66px] mx-auto bg-[#CBE26B] text-[#1E1E1E] font-aileron font-semibold rounded-full mt-6 xl:mt-10'>Send A Message</button>
+                            <button className='relative overflow-hidden group sm:col-span-2 w-[250px] xs:w-[350px] sm:w-[550px] h-[60px] xs:h-[66px] mx-auto bg-[#CBE26B] text-[#1E1E1E] font-aileron font-semibold rounded-full mt-6 xl:mt-10'>
+                                <span className="absolute top-0 left-0 h-full w-0 bg-black transition-all duration-500 ease-out group-hover:w-full z-0"></span>
+                                <span className='relative z-10 group-hover:text-white transition-all duration-1000 ease-out'>Send A Message</span>
+                            </button>
                         </div>
                     </div>
                 </div>

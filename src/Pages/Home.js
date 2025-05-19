@@ -140,6 +140,7 @@ const Home = () => {
 
 
   const [firstlineWidth, setFirstLineWidth] = useState('118px');
+  const [secondlineWidth, setSecondLineWidth] = useState('90px');
 
   useEffect(() => {
     const handleResize = () => {
@@ -147,12 +148,16 @@ const Home = () => {
 
       if (width >= 768) {
         setFirstLineWidth('224px');       // md and above
+        setSecondLineWidth('160px');
       } else if (width >= 640) {
         setFirstLineWidth('200px');       // sm
+        setSecondLineWidth('160px');
       } else if (width >= 425) {
         setFirstLineWidth('150px');       // xs
+        setSecondLineWidth('115px');
       } else {
         setFirstLineWidth('118px');       // base
+        setSecondLineWidth('90px');
       }
     };
 
@@ -667,7 +672,18 @@ const Home = () => {
         <div className="max-w-7xl xl:mx-auto grid lg:grid-cols-[542px_auto] pl-2 xl:grid-cols-2 gap-10 lg:gap-5 xl:gap-10">
           <div className="relative w-[300px] xs:w-[400px] sm:w-[542px] md:ml-4 lg:ml-0">
             <h1 className="relative font-anton text-[28px] xs:text-[36px] sm:text-[52px] z-10">START YOUR ONLINE GROWTH IN 4 SIMPLE STEPS.</h1>
-            <img src={HeaderLine} alt="HeaderLine" className="absolute top-8 right-2 xs:top-[44px] xs:right-6 sm:top-16 sm:right-0 md:right-0 w-[90px] xs:w-[115px] sm:w-[160px] h-[10px]" />
+            <motion.img
+              initial={{ width: 0 }} // Starts with 0 width
+              whileInView={{ width: secondlineWidth }}
+              transition={{
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.5,
+              }}
+              viewport={{ once: true }}
+              src={HeaderLine}
+              alt="HeaderLine"
+              className="absolute top-8 left-[204px] xs:left-[260px] sm:left-[381px] xs:top-[44px] xs:right-6 sm:top-16 sm:right-0 md:right-0 h-[10px]" />
             <motion.img
               animate={{
                 scale: [1, 1.1, 1],
